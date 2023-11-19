@@ -1,0 +1,1264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/"
+     xml:base="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:FashionRetailOntology="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology">
+        <rdfs:comment>Assignment about Fashion Retail domain</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasBrand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasNumber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasPurchased -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasPurchased">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasStyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#isSmallerThan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#isSmallerThan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#purchasedBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#purchasedBrand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#customerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#customerName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#pay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#pay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#productName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#productName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#productPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#productPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Affordable_FootwearBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Affordable_FootwearBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Fast_FashionBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Casual_ApparelBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Athletic_ShoesBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Athletic_ShoesBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SportswearBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Sportswear_ApparelBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Avant-GardeBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Avant-GardeBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DesignerBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Haute_CoutureBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Bootcut_JeansProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Bootcut_JeansProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BootsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BootsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Casual_ApparelBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Casual_ApparelBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Fast_FashionBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#customerName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DesignerBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DesignerBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Designer_AccessoriesBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Designer_AccessoriesBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LuxuryBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High_FashionBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Distressed_JeansProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Distressed_JeansProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Eco-FriendlyBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Eco-FriendlyBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SustainableBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Ethical_FashionBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Ethical_FashionBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Ethical_FashionBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SustainableBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Evening_GownsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Evening_GownsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Fast_FashionBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Fast_FashionBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#FlatsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#FlatsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Global_FashionBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Global_FashionBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#InternationalBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#International_ShoeBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Graphic_T-ShirtsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Graphic_T-ShirtsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#GuestCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#GuestCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Haute_CoutureBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Haute_CoutureBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DesignerBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High-Waisted_JeansProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High-Waisted_JeansProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High_FashionBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High_FashionBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LuxuryBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High_HeelsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High_HeelsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#In-StoreCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#In-StoreCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#InternationalBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#InternationalBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#International_ShoeBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#International_ShoeBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#InternationalBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LocalBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LocalBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Local_ClothingBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Local_ClothingBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LocalBrands"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Local_ShoeBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Local_ShoeBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Local_ShoeBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LocalBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Loyalty_ProgramCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Loyalty_ProgramCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LuxuryBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LuxuryBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Maxi_DressesProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Maxi_DressesProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Mini_DressesProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Mini_DressesProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#OnlineCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#OnlineCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Plain_T-ShirtsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Plain_T-ShirtsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Polo_ShirtsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Polo_ShirtsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasSize"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#RecommendProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#RecommendProduct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#RegisteredCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#RegisteredCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SandalsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SandalsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Skinny_JeansProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Skinny_JeansProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SneakersProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SneakersProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SportswearBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SportswearBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Sportswear_ApparelBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Sportswear_ApparelBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SportswearBrands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Straight-Leg_JeansProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Straight-Leg_JeansProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Style"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SundressesProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SundressesProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SustainableBrands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SustainableBrands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#V-Neck_T-ShirtsProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#V-Neck_T-ShirtsProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#VIPCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#VIPCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#WholesaleCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#WholesaleCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Wrap_DressesProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Wrap_DressesProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <FashionRetailOntology:hasPurchased rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product1"/>
+        <FashionRetailOntology:customerName>Alice</FashionRetailOntology:customerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Athletic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Athletic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <FashionRetailOntology:hasPurchased rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product2"/>
+        <FashionRetailOntology:customerName>Bob</FashionRetailOntology:customerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Avant-GardeBrands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Haute_CoutureBrands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Affordable_FootwearBrands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Casual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Casual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Formal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Formal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Style"/>
+        <FashionRetailOntology:hasColor rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Black"/>
+        <FashionRetailOntology:hasColor rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brown"/>
+        <FashionRetailOntology:hasColor rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#White"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Jack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Jack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+        <FashionRetailOntology:customerName>Jack</FashionRetailOntology:customerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Large -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Large">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+        <FashionRetailOntology:isSmallerThan rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Large"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Orange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <FashionRetailOntology:hasBrand rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand1"/>
+        <FashionRetailOntology:hasColor rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Red"/>
+        <FashionRetailOntology:hasSize rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Small"/>
+        <FashionRetailOntology:hasStyle rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Casual"/>
+        <FashionRetailOntology:productName>Product1</FashionRetailOntology:productName>
+        <FashionRetailOntology:productPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">53.9</FashionRetailOntology:productPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <FashionRetailOntology:hasBrand rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand2"/>
+        <FashionRetailOntology:hasColor rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Blue"/>
+        <FashionRetailOntology:hasSize rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Large"/>
+        <FashionRetailOntology:hasStyle rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Athletic"/>
+        <FashionRetailOntology:productName>Product2</FashionRetailOntology:productName>
+        <FashionRetailOntology:productPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.9</FashionRetailOntology:productPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Product3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        <FashionRetailOntology:hasBrand rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Brand2"/>
+        <FashionRetailOntology:hasColor rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Blue"/>
+        <FashionRetailOntology:hasSize rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Large"/>
+        <FashionRetailOntology:hasStyle rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Formal"/>
+        <FashionRetailOntology:productName>Product3</FashionRetailOntology:productName>
+        <FashionRetailOntology:productPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</FashionRetailOntology:productPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Purple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Purple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Small -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Small">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+        <FashionRetailOntology:isSmallerThan rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Large"/>
+        <FashionRetailOntology:isSmallerThan rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Bootcut_JeansProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Distressed_JeansProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High-Waisted_JeansProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Skinny_JeansProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Straight-Leg_JeansProduct"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BootsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#FlatsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#High_HeelsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SandalsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SneakersProduct"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ProductClass"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DesignerBrands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Fast_FashionBrands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#InternationalBrands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LocalBrands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#LuxuryBrands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SportswearBrands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SustainableBrands"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#DressProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#JeansProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#ShoesProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#T-ShirtProduct"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Evening_GownsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Maxi_DressesProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Mini_DressesProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#SundressesProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Wrap_DressesProduct"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Graphic_T-ShirtsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Plain_T-ShirtsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Polo_ShirtsProduct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#V-Neck_T-ShirtsProduct"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#GuestCustomer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#In-StoreCustomer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Loyalty_ProgramCustomer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#OnlineCustomer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#RegisteredCustomer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#VIPCustomer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#WholesaleCustomer"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/st">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/pr">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>RecommendProduct</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Size"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#Style"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/st"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasSize"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasStyle"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/st"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#BrandClass"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/b"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasPurchased"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>BrandName</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasPurchased"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasBrand"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#purchasedBrand"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>payment</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#CustomerClass"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasPurchased"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#hasBrand"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#productPrice"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/pr"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology#pay"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ecemi/ontologies/2023/10/FashionRetailOntology/pr"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
