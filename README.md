@@ -1,5 +1,4 @@
-## Protege
-### Ambient Intelligence Application for Fashion Store
+## Ambient Intelligence Application for Fashion Store
 
 ### Fashion Retail Ontology
 Welcome to the Fashion Retail Ontology, a semantic representation of a dynamic and interactive fashion store environment.
